@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>IsaacBook</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body style="display: flex;justify-content: center;align-items: center;flex-direction: column;margin: 50px auto 0;">
+
+<img th:src="@{https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY2MzU3Njc4ODI0NjI5OTM0/isaac_newton_1689_painting_sir_godfrey_kneller_public_domain_via_wikimedia_commons.jpg}" width="80" height="80" alt="Isaac Newton">
+
+<h1>Welcome to IsaacBook!</h1>
+<form action="/submit" method="POST">
+    <fieldset style="width: 250px;">
+    <!-- Title box -->
+    <label for="title">Write post title:</label>
+    <input type="text" id="title" name="titel"/>
+    <br><br>
+
+    <!-- content box -->
+    <label for="content">Write content:</label>
+    <input type="text" id="content" name="content"/>
+    <br><br>
+
+    <!-- date box -->
+    <label for="date">Write date:</label>
+    <input type="date" id="date" name="date"/>
+    <br><br>
+
+    <!-- Public / private -->
+    <b>What type should the post be?</b>
+    <br><br>
+    <div class="valg">
+    <label for="private1">Private</label>
+    <input type="checkbox" id="private1" name="formalname" value="Private"/>
+    <label for="public">Public</label>
+    <input type="checkbox" id="public" name="formalname" value="Public"/>
+    </div>
+    <br>
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+    </fieldset>
+</form>
+</body>
+<footer>
+    <p>Coded by: Isaac</p>
+</footer>
+
+</html>

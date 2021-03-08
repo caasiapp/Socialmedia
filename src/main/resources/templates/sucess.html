@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Sucess!</title>
+</head>
+
+<body style="display: flex;justify-content: center;align-items: center;flex-direction: column;margin: 50px auto 0;">
+<img th:src="@{https://i.imgur.com/XJyemeI.jpg}" width="220" height="150" alt="Great sucess!">
+<br>
+
+<fieldset style="width: auto;">
+<h1>Congrats! You just made a new post on IsaacBooK</h1>
+<center><h3>Here are some information regarding your new post:</h3></center>
+<b>Title:</b>
+<p th:text="${titel}"></p>
+<b>Content:</b>
+<p th:text="${content}"></p>
+<b>Date:</b>
+<p th:text="${date}"></p>
+<b>Post type:</b>
+<p th:text="${formalname}"></p>
+
+<center><a href="/dashboard">Click here to see all posts</a></center>
+</fieldset>
+</body>
+<footer>
+    <p>Coded by: Isaac</p>
+</footer>
+
+</html>
